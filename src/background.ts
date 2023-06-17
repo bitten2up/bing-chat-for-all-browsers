@@ -16,7 +16,7 @@ const MOBILE_UA_SUFFIX = 'EdgA/42.0.0.2057'
 const DESKTOP_UA_SUFFIX = 'Edg/112.0.1722.48'
 
 const DESKTOP_UA_PREFIX =
-  'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36'
+  'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36'
 const MOBILE_UA_PREFIX =
   'Mozilla/5.0 (Linux; Android 8.1.0; Pixel Build/OPM4.171019.021.D1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.109 Mobile Safari/537.36'
 
@@ -50,7 +50,7 @@ if (IS_FIREFOX) {
       })
       return { requestHeaders: newHeaders }
     },
-    { urls: ['*://*.bing.com/*'] },
+    { urls: ['*://*.google.com/*'] },
     ['blocking', 'requestHeaders']
   )
 }
